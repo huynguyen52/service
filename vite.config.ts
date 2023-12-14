@@ -13,7 +13,13 @@ export default defineConfig({
       exposes: {
         './Button': './src/components/Button.tsx',
       },
-      shared: ['react', 'react-dom'],
+      shared: [
+        'react',
+        'react-dom',
+        'i18next',
+        'i18next-http-backend',
+        'react-i18next',
+      ],
     }),
   ],
   build: {

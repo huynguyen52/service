@@ -1,5 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const Button = () => {
-  return <button>Click me</button>;
+  const { t } = useTranslation();
+  return <button>Click me: {t('hello')}</button>;
 };
 
 export default Button;
