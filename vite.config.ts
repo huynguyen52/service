@@ -12,14 +12,9 @@ export default defineConfig({
       // Modules to expose
       exposes: {
         './Button': './src/components/Button.tsx',
+        './i18n': './src/i18next/index.ts',
       },
-      shared: [
-        'react',
-        'react-dom',
-        'i18next',
-        'i18next-http-backend',
-        'react-i18next',
-      ],
+      shared: ['react', 'react-dom', 'i18next-http-backend', 'react-i18next'],
     }),
   ],
   build: {
